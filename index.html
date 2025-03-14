@@ -2,44 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solution</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Solution</title>
 
-    <!-- daisy ui and tailwind cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- poppins font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <!-- daisy ui and tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- eb garamond font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-        rel="stylesheet">
+  <!-- poppins font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <style>
-        .poppins-font {
-            font-family: "Poppins", sans-serif;
-        }
+  <!-- eb garamond font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
 
-        .eb-garamond-font {
-            font-family: "EB Garamond", serif;}
-    </style>
+  <style>
+    .poppins-font {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .eb-garamond-font {
+      font-family: "EB Garamond", serif;
+    }
+  </style>
 
 
 
 </head>
 
-<body>
+<body class="poppins-font">
 
-    <h1 class="poppins-font">Lorem ipsum dolor sit amet.</h1>
-    <h1 class="eb-garamond-font">Lorem ipsum dolor sit amet.</h1>
+  <header class="w-11/12 mx-auto">
+
+    <!-- navbar start here------------------------------------------------- -->
+    <div class="navbar bg-base-100 my-12">
+
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn bg-[#B68C5A] sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 text-[#707070] rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Services ></a></li>
+            <li><a>Cases ></a></li>
+            <li><a>Blog ></a></li>
+            <li><a>Contact Us ></a></li>
+          </ul>
+        </div>
+        <a class="hidden sm:flex">
+          <img class="w-4xs" src="./images/logo2.png" alt="">
+        </a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-[#707070] text-base">
+          <li><a>Home</a></li>
+          <li><a>Services ></a></li>
+          <li><a>Cases ></a></li>
+          <li><a>Blog ></a></li>
+          <li><a>Contact Us ></a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+        <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+      </div>
+
+    </div>
+
+
+    <!-- banner start here------------------------------------------------- -->
+    <div class="mb-30">
+      <div class="hero min-h-screen"
+        style="background-image: url(./images/banner.png);">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center flex justify-between items-center">
+          <div class="max-w-screen-lg">
+            <h1 class="mb-6 text-4xl lg:text-7xl font-bold eb-garamond-font">We Provide Effective <br> Legal Solutions</h1>
+            <p class="mb-6 text-base font-normal">
+              There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.
+            </p>
+            <button class="btn text-[#A0A0A0] m-5">Search your services</button>
+            <button class="btn bg-[#B68C5A] text-white">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
 
 </body>
 
